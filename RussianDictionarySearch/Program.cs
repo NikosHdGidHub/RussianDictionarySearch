@@ -9,7 +9,7 @@ namespace RussianDictionarySearch
 {
 	internal class Program
 	{
-		private const string path = "dictionary1.txt";
+		private const string path = "russian_nouns.txt";
 		private static readonly IConsoleModel model = ConsoleModel.GetView();
 
 		private static void Main(string[] args)
@@ -24,7 +24,7 @@ namespace RussianDictionarySearch
 			for (int i = 0; i < DictionaryRow.Count; i++)
 			{
 				//DictionaryRow[i] = DictionaryRow[i].Substring(8);
-				Tree.Add(DictionaryRow[i].Substring(8), i);
+				Tree.Add(DictionaryRow[i], i);
 			}
 			
 			var flag = true;
