@@ -49,5 +49,19 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Libs\LibFramework\Lib\ConsoleLib\ConsoleLib.csproj">
+      <Project>{8b2b4265-fc12-415e-8aef-a493050d6b32}</Project>
+      <Name>ConsoleLib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Libs\LibFramework\Lib\Lib.csproj">
+      <Project>{89461888-0467-4f40-a0db-139eff98cdba}</Project>
+      <Name>Lib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Libs\LibFramework\Lib\LinkedLists\TreeLib\TreeLib.csproj">
+      <Project>{d0d46c37-5d89-4456-9478-53354085fa0f}</Project>
+      <Name>TreeLib</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
